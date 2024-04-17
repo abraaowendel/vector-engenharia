@@ -6,12 +6,18 @@ export const Header = () => {
   return (
     <C.Header>
       <C.Logo src={Logo} alt="" />
+      <C.btnMenu>
+          <div></div>
+          <div></div>
+          <div></div>
+        </C.btnMenu>
       <C.Nav>
+       
         <C.Ul>
           <a href="#home">HOME</a>
-          <a href="#">SOBRE</a>
-          <a href="#">SOLICITE SEU PROJETO PERSONALIZADO</a>
-          <a href="#">PROJETOS PRONTOS</a>
+          <a href="#sobre">SOBRE</a>
+          <a href="#solicitar">SOLICITE SEU PROJETO PERSONALIZADO</a>
+          <a href="#projetos">PROJETOS PRONTOS</a>
           <a href="https://api.whatsapp.com/send?phone=5582981820315">
             <img src={IconWhatsApp} alt="" />
           </a>

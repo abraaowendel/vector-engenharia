@@ -14,6 +14,7 @@ export const Container = styled.div`
     padding: 40px 60px;
   }
 `;
+
 export const SectionHome = styled.section``;
 
 export const SectionAbout = styled.section`
@@ -72,7 +73,7 @@ export const Item = styled.div`
   }
   span {
     display: block;
-    color: #4a653c;
+    color: #25D366;
     margin-top: 5px;
   }
   #btn {
