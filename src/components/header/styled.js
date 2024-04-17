@@ -17,9 +17,9 @@ export const Logo = styled.img`
 export const Ul = styled.ul`
     a{
         font-family: 'Poppins', 'Ubuntu';
-        margin:0 15px;
+        margin:0 10px;
         color: #fff;
-        font-size: 18px;
+        font-size: 16px;
         img{
             margin-bottom: -10px;
         }

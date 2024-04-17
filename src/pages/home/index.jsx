@@ -133,7 +133,7 @@ export const Home = () => {
         </C.SectionProjects>
         <C.SectionRequest id="solicitar">
           <h2>Solicite seu projeto</h2>
-          <button>Entrar em contato</button>
+          <a href="https://api.whatsapp.com/send?phone=5582981820315">Entrar em contato</a>
         </C.SectionRequest>
       </main>
     </C.Container>

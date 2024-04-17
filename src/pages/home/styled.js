@@ -8,6 +8,7 @@ export const Container = styled.div`
   font-family: "Poppins", "Ubuntu", sans-serif;
   h2 {
     text-align: center;
+    text-transform: uppercase;
   }
   section {
     padding: 40px 60px;
@@ -30,15 +31,17 @@ export const SectionRequest = styled.section`
   flex-direction: column;
   justify-content: center;
   background-color: #151515;
-  button {
+  a {
     cursor: pointer;
-    max-width: 200px;
+    max-width: 250px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid transparent;
+    background-color: #25D366;
+    color: #000;
   }
-  button:hover {
+  a:hover {
     opacity: 0.8;
   }
 `;
@@ -56,6 +59,10 @@ export const Item = styled.div`
     height: 250px;
     border-radius: 10px;
     background-color: #111111;
+    &:hover{
+      cursor: pointer;
+      opacity: .9;
+   }
   }
   #desc {
     padding: 10px;
