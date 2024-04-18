@@ -3,7 +3,6 @@ import Logo from "../../assets/images/logo.png";
 import IconWhatsApp from "../../assets/icons/icon-whatsapp.svg";
 
 export const Header = () => {
-  const useNavigate = navigator();
   return (
     <C.Header>
       <C.Logo src={Logo} alt="" />
