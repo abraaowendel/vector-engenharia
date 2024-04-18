@@ -3,6 +3,7 @@ import Logo from "../../assets/images/logo.png";
 import IconWhatsApp from "../../assets/icons/icon-whatsapp.svg";
 
 export const Header = () => {
+  const useNavigate = navigator();
   return (
     <C.Header>
       <C.Logo src={Logo} alt="" />
@@ -14,6 +15,7 @@ export const Header = () => {
       <C.Nav>
        
         <C.Ul>
+          {/* COLOCAR LINK AO INVÉS DE <a/> */}
           <a href="#home">HOME</a>
           <a href="#sobre">SOBRE</a>
           <a href="#solicitar">SOLICITE SEU PROJETO PERSONALIZADO</a>

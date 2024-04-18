@@ -12,8 +12,8 @@ export const Header = styled.header`
   padding: 30px 60px;
 `;
 export const btnMenu = styled.div`
-position: absolute;
-    right: 60px;
+  position: absolute;
+  right: 60px;
   display: none;
   flex-direction: column;
   @media (max-width: 1200px) {

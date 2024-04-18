@@ -8,7 +8,8 @@ export const Container = styled.footer`
     padding: 30px 60px;
     height: 80px;
     font-family: 'Poppins';
+    background-color: #000;
     p{
-        color: #000;
+        color: #fff;
     }
 `;
