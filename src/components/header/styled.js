@@ -1,15 +1,23 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const Header = styled.header`
   position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
   right: 0;
+  background-color: #000;
   display: flex;
   align-items: center;
-  background-color: #111111;
   justify-content: space-between;
   padding: 30px 60px;
+  button{
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+    margin: 0 10px;
+  }
 `;
 export const btnMenu = styled.div`
   position: absolute;
@@ -35,7 +43,6 @@ export const Ul = styled.ul`
     display: none;
   }
   a {
-    font-family: "Poppins", "Ubuntu";
     margin: 0 10px;
     color: #fff;
     font-size: 16px;
@@ -48,3 +55,15 @@ export const Ul = styled.ul`
   }
 `;
 export const Nav = styled.nav``;
+
+export const StyledLink = styled(Link)`
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  user-select: none;
+  font-family: "Poppins", "Ubuntu";
+  margin: 0 10px;
+  &:hover {
+    color: #fff;
+  }
+`;

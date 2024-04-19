@@ -9,7 +9,8 @@ html,body{
     overflow-x: hidden;
 }
 main{
-   
+   display: flex;
+   flex-direction: column;
 }
 ::-webkit-scrollbar {
     width: 12px;
