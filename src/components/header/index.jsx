@@ -30,7 +30,7 @@ export const Header = () => {
           location.pathname !== "/" || isScrolled ? "#000" : "transparent",
       }}
     >
-      <C.Logo src={Logo} alt="Logo Vector Engenharia" width={410} />
+      <C.Logo src={Logo} alt="Logo Vector Engenharia" width={"410px"} height={"auto"} />
 
       <C.btnMenu onClick={() => setToogle(!toogle)}>
         {!toogle && <CgMenu color="#fff" fontSize={"35px"} />}
@@ -40,7 +40,7 @@ export const Header = () => {
         <C.StyledLink
           to="/"
           style={{ color: location.pathname === "/" ? "#fff" : "#ccc" }}
-          alt="ir para a seção home"
+          aria-describedby="ir para a seção home"
           onClick={() => setToogle(false)}
         >
           HOME
@@ -48,7 +48,7 @@ export const Header = () => {
         <C.StyledLink
           to="/sobre"
           style={{ color: location.pathname === "/sobre" ? "#fff" : "#ccc" }}
-          alt="ir para a seção sobre"
+          aria-describedby="ir para a seção sobre"
           onClick={() => setToogle(false)}
         >
           SOBRE
@@ -58,7 +58,7 @@ export const Header = () => {
           style={{
             color: location.pathname === "/solicitar" ? "#fff" : "#ccc",
           }}
-          alt="ir para a seção solicitar orçamento"
+          aria-describedby="ir para a seção solicitar orçamento"
           onClick={() => setToogle(false)}
         >
           SOLICITE SEU PROJETO PERSONALIZADO
@@ -68,7 +68,7 @@ export const Header = () => {
           style={{
             color: location.pathname === "/projetos" ? "#fff" : "#ccc",
           }}
-          alt="ir para a seção projetos"
+          aria-describedby="ir para a seção projetos"
           onClick={() => setToogle(false)}
         >
           PROJETOS PRONTOS

@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import * as C from "./styled";
 
-import Imagem1 from "../../assets/images/slide-1.jpg";
-import Imagem2 from "../../assets/images/slide-2.jpg";
-import Imagem3 from "../../assets/images/slide-3.jpg";
+import Imagem1 from "../../assets/images/slide-1.webp";
+import Imagem2 from "../../assets/images/slide-2.webp";
+import Imagem3 from "../../assets/images/slide-3.webp";
 
 export const Home = () => {
   const [slides, setSlides] = useState([
@@ -21,7 +21,7 @@ export const Home = () => {
         const nextIndex = prevIndex + 1;
         return nextIndex < slides.length ? nextIndex : 0;
       });
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(intervalId);
   }, [slides, currentSlideIndex]);
