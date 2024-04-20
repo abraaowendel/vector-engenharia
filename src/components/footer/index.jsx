@@ -4,8 +4,6 @@ import { SiGmail } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa";
 
 export const Footer = () => {
-
-
     return (
         <C.Container>
             <div>
