@@ -44,18 +44,21 @@ export const Home = () => {
                 backgroundColor: currentSlideIndex == 0 ? "#fff" : "#cccccc",
               }}
               onClick={() => setCurrentSlideIndex(0)}
+              aria-label="Mostrar a 1º imagem"
             ></div>
             <div
               style={{
                 backgroundColor: currentSlideIndex == 1 ? "#fff" : "#cccccc",
               }}
               onClick={() => setCurrentSlideIndex(1)}
+              aria-label="Mostrar a 2º imagem"
             ></div>
             <div
               style={{
                 backgroundColor: currentSlideIndex == 2 ? "#fff" : "#cccccc",
               }}
               onClick={() => setCurrentSlideIndex(2)}
+              aria-label="Mostrar a 3º imagem"
             ></div>  
           </C.Buttons>
         </C.Container>

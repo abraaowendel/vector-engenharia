@@ -26,7 +26,7 @@ export const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: end;
-  transition: all .9s ease-in-out;
+  transition: all .8s ease-in;
   background-color: #000;
   @media (max-width: 480px) {
     min-height: 90vh;
@@ -41,7 +41,7 @@ export const Buttons = styled.div`
     height: 12px;
     border: 1px solid #fff;
     border-radius: 50%;
-    margin: 70px 5px;
+    margin: 0 5px 50px;
     cursor: pointer;
   }
 `;

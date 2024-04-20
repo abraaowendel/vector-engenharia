@@ -22,7 +22,7 @@ export const Sobre = () => {
             processo executivo sem muitas complicações ou dúvidas recorrentes da
             mão de obra. Entre em contato conosco e realize seu orçamento!
           </p>
-          <button onClick={() => navigate("/solicitar")}>
+          <button onClick={() => navigate("/solicitar")} aria-label="Ir  para a seção Solicitar um projeto personalizado">
             Entrar em contato
           </button>
         </C.Section>

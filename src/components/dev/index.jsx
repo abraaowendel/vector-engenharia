@@ -7,5 +7,5 @@ function EmDev() {
         </C.Container>
     );
 }
-
+/* ESSE COMPONENTE PODE SER EXCLUIDO */
 export default EmDev;

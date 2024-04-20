@@ -1,0 +1,44 @@
+Copyright (c) 2024 [Abraao Wendel](https://abraaowendel.github.io/portfolio/)
+
+MIT License
+
+
+Licensor hereby grants Licensee a non-exclusive, non-transferable, revocable license to use the Software solely for non-commercial purposes.
+
+2. Restrictions:
+
+Licensee may not:
+
+Sublicense, rent or lease the Software;
+Modify, translate or create derivative works of the Software;
+Remove or obscure any copyright or trademark notices from the Software;
+Attempt to reverse engineer, decompile or disassemble the Software;
+Use the Software for any commercial purpose;
+Distribute software to third parties.
+3. Support:
+
+The Grantor is not obliged to provide technical support or maintenance for the Software.
+
+4. Warranty:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. GRANTOR SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES, ARISING OUT OF OR IN ANY WAY RELATED TO THE USE OF THE SOFTWARE, EVEN IF GRANTOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+5. Termination:
+
+This license may be terminated by the Grantor at any time upon written notice to Licensee. This license will also terminate automatically if Licensee violates any of the terms of this license.
+
+6. Applicable Legislation:
+
+This license will be governed by and construed in accordance with the laws of Brazil.
+
+7. General Provisions:
+
+This license constitutes the entire agreement between the parties with respect to the Software and supersedes all prior communications, proposals or agreements, whether oral or written. No change to this license will be valid unless made in writing and signed by both parties. If any provision of this license is held to be invalid or unenforceable, that provision will be deemed a reinstatement of this license and the remaining provisions will remain in effect.
+
+By using the Software, Licensee agrees to all terms of this license.
+
+[Abraao Wendel]
+
+[AW]
+
+[20.04.2024]

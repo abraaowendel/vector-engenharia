@@ -64,6 +64,7 @@ export const Area = styled.div`
         font-size: 14px;
     }
     a {
+        min-width: 150px;
         font-size: 14px;
         margin: 10px auto;
     }

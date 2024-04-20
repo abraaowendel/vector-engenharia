@@ -45,9 +45,8 @@ export const btnMenu = styled.div`
 `;
 export const Logo = styled.img`
   z-index: 5;
-  height: 50px;
-  @media (max-width: 1230px) {
-    width: 250px;
+  @media (max-width: 1130px) {
+    width: 260px;
     height: auto;
   }
   @media (max-width: 979px) {
@@ -57,11 +56,8 @@ export const Logo = styled.img`
     width: 215px;
   }
 `;
+
 export const Nav = styled.nav`
-    @media (max-width: 1230px) {
-    }
-`;
-export const Ul = styled.ul`
   @media (max-width: 979px) {
     position: absolute;
     text-align: center;

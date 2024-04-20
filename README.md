@@ -1,8 +1,34 @@
-# React + Vite
+# Vector Engenharia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo à Vector Engenharia! 🏗️
 
-Currently, two official plugins are available:
+Somos uma empresa especializada em projetos de engenharia e construção, comprometida com a qualidade, a inovação e a sustentabilidade. Oferecemos uma ampla gama de serviços para atender às suas necessidades, desde a concepção inicial até a execução final do projeto.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<div>
+  <img src="/src/assets/images/preview.png" alt="preview">
+</div>
+
+## Seções:
+
+### Home:
+
+- Uma breve introdução à Vector Engenharia e aos nossos serviços.
+- Links para as seções Sobre, Solicite Seu Projeto e Projetos.
+
+### Sobre:
+
+- Nossa história, missão, visão e valores.
+
+### Solicite Seu Projeto:
+
+- Um formulário para solicitar um orçamento para um projeto. 💼
+
+### Projetos:
+
+- Uma galeria de fotos e descrições de nossos projetos mais recentes.
+- Filtros para pesquisar projetos por tipo, setor e localização.
+- Links para estudos de caso detalhados.
+
+## Desenvolvido por:
+
+[@abraaowendel](https://github.com/abraaowendel)

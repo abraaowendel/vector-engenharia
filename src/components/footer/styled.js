@@ -9,12 +9,18 @@ export const Container = styled.footer`
   padding: 15px 60px;
   font-family: "Poppins";
   div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
-    svg {
-      margin: 10px 10px 10px;
+    user-select: none;
+    a{
+      padding: 10px;
       &:hover {
         opacity: 0.5;
       }
+    }
+    svg {
     }
   }
   p {

@@ -7,14 +7,14 @@ export const Footer = () => {
     return (
         <C.Container>
             <div>
-                <a href="https://www.instagram.com/abraaowsv/">
-                    <SlSocialInstagram fontSize={28} color="#fff"/>
+                <a href="https://www.instagram.com/gabriel_aqn/" target="_blank">
+                    <SlSocialInstagram fontSize={30} color="#fff"/>
                 </a>
-                <a href="https://api.whatsapp.com/send?phone=5582982026496&text=Ol%C3%A1%2C%20desejo%20solicitar%20um%20projeto%20personalizado.%F0%9F%98%80">
+                <a href="https://api.whatsapp.com/send?phone=5582982026496&text=Ol%C3%A1%2C%20desejo%20solicitar%20um%20projeto%20personalizado.%F0%9F%98%80" target="_blank">
                     <FaWhatsapp fontSize={30} color="#fff"/>
                 </a>
-                <a href="mailto:">
-                    <SiGmail fontSize={28} color="#fff"/>
+                <a href="mailto:abraao.dev@gmail.com" target="_blank">
+                    <SiGmail fontSize={30} color="#fff"/>
                 </a>
             </div>
             <p>Copyright © {new Date().getFullYear()} Vector Engenharia. Todos os direitos reservados.</p>
