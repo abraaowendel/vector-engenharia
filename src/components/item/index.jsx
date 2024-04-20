@@ -1,13 +1,13 @@
 import * as C from "./styled";
 
-export const Item = () => {
+export const Item = ({props}) => {
     return(
         <C.Area>
-            <div id="img"></div>
-            <p>Descrição aqui</p>
-            <span>em 10x de R$ 32,00 sem juros</span>
-            <button>Saiba mais</button>
+            <img src={props.img}/>
+            <h4>{props.titulo}</h4>
+            <p>{props.valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
+            <span>em 10x de {(props.valor / 10).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} sem juros</span>
+            <a href={props.url} target="_blank">Saiba mais</a>
         </C.Area>
     );
-
 }

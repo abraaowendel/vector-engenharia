@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import * as C from "./styled";
 
 import Imagem1 from "../../assets/images/slide-1.jpg";
@@ -27,17 +28,38 @@ export const Home = () => {
 
   return (
     <C.Filtro>
-      <C.Container
-        style={{
-          backgroundImage: `url("${slides[currentSlideIndex].content}")`,
-        }}
+      <motion.div
+        initial={{ opacity: 0.5, scale: 1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
       >
-        <C.Buttons>
-          <div style={{backgroundColor: currentSlideIndex == 0 ? "#fff": "#cccccc"}} onClick={() => setCurrentSlideIndex(0)}></div>
-          <div style={{backgroundColor: currentSlideIndex == 1 ? "#fff": "#cccccc"}} onClick={() => setCurrentSlideIndex(1)}></div>
-          <div style={{backgroundColor: currentSlideIndex == 2 ? "#fff": "#cccccc"}} onClick={() => setCurrentSlideIndex(2)}></div>
-        </C.Buttons>
-      </C.Container>
+        <C.Container
+          style={{
+            backgroundImage: `url("${slides[currentSlideIndex].content}")`,
+          }}
+        >
+          <C.Buttons>
+            <div
+              style={{
+                backgroundColor: currentSlideIndex == 0 ? "#fff" : "#cccccc",
+              }}
+              onClick={() => setCurrentSlideIndex(0)}
+            ></div>
+            <div
+              style={{
+                backgroundColor: currentSlideIndex == 1 ? "#fff" : "#cccccc",
+              }}
+              onClick={() => setCurrentSlideIndex(1)}
+            ></div>
+            <div
+              style={{
+                backgroundColor: currentSlideIndex == 2 ? "#fff" : "#cccccc",
+              }}
+              onClick={() => setCurrentSlideIndex(2)}
+            ></div>  
+          </C.Buttons>
+        </C.Container>
+      </motion.div>
     </C.Filtro>
   );
 };

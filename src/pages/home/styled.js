@@ -11,6 +11,9 @@ export const Filtro = styled.div`
   padding: 0;
   width: 100vw;
   min-height: calc(100vh - 60px);
+  @media (max-width: 480px) {
+    min-height: 90vh;
+  }
 `;
 
 export const Container = styled.section`
@@ -23,17 +26,22 @@ export const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: end;
+  transition: all .9s ease-in-out;
+  background-color: #000;
+  @media (max-width: 480px) {
+    min-height: 90vh;
+  }
 `;
 
 export const Buttons = styled.div`
   display: flex;
   margin-bottom: 20px;
   div {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border: 1px solid #fff;
     border-radius: 50%;
-    margin: 50px 5px;
+    margin: 70px 5px;
     cursor: pointer;
   }
 `;

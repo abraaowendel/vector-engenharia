@@ -2,21 +2,21 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100vw;
-  min-height: calc(100vh - 70px);
-  background-color: #111111;
+  min-height: calc(100vh - 107px);
+  background-color: #fff;
   font-family: 'Poppins', 'Ubuntu', 'Arial';
 `
 export const Section = styled.section`
   max-width: 1140px;
+  min-height: calc(100vh - 107px);
   margin: auto;
-  padding: 60px;
+  padding: 60px 60px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: calc(100vh - 60px);
   font-family: 'Poppins', 'Ubuntu', 'Arial';
-  color: #fff;
+  color: #000;
   h2{
     font-size: 36px;
   }
@@ -34,7 +34,26 @@ export const Section = styled.section`
     text-transform: uppercase;
     cursor: pointer;
     &:hover{
-      opacity:.8;
+      background-color: #8b0000;
     }
+  }
+  @media (max-width: 480px) {
+    padding: 60px 20px 0;
+    h2{
+      font-size: 30px;
+    }
+    p{
+      font-size: 16px;
+    }
+    
+  } 
+  @media (max-width: 380px) {
+    h2{
+      font-size: 28px;
+    }
+    p{
+      font-size: 14px;
+    }
+    
   }
 `;

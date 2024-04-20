@@ -3,11 +3,13 @@ import Logo from "../../assets/images/logo.png";
 import IconWhatsApp from "../../assets/icons/icon-whatsapp.svg";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { GrClose } from "react-icons/gr";
+import { CgMenu } from "react-icons/cg";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
+  const [toogle, setToogle] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +22,8 @@ export const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const containerClass = toogle ? "active" : "";
+
   return (
     <C.Header
       style={{
@@ -28,17 +32,18 @@ export const Header = () => {
       }}
     >
       <C.Logo src={Logo} alt="Logo Vector Engenharia" />
-      <C.btnMenu>
-        <div></div>
-        <div></div>
-        <div></div>
+
+      <C.btnMenu onClick={() => setToogle(!toogle)}>
+        {!toogle && <CgMenu color="#fff" fontSize={"35px"} />}
+        {toogle && <GrClose color="#fff" fontSize={"35px"} />}
       </C.btnMenu>
       <C.Nav>
-        <C.Ul>
+        <C.Ul className={containerClass}>
           <C.StyledLink
             to="/"
             style={{ color: location.pathname === "/" ? "#fff" : "#ccc" }}
             alt="ir para a seção home"
+            onClick={() => setToogle(false)}
           >
             HOME
           </C.StyledLink>
@@ -46,6 +51,7 @@ export const Header = () => {
             to="/sobre"
             style={{ color: location.pathname === "/sobre" ? "#fff" : "#ccc" }}
             alt="ir para a seção sobre"
+            onClick={() => setToogle(false)}
           >
             SOBRE
           </C.StyledLink>
@@ -55,6 +61,7 @@ export const Header = () => {
               color: location.pathname === "/solicitar" ? "#fff" : "#ccc",
             }}
             alt="ir para a seção solicitar orçamento"
+            onClick={() => setToogle(false)}
           >
             SOLICITE SEU PROJETO PERSONALIZADO
           </C.StyledLink>
@@ -64,14 +71,10 @@ export const Header = () => {
               color: location.pathname === "/projetos" ? "#fff" : "#ccc",
             }}
             alt="ir para a seção projetos"
+            onClick={() => setToogle(false)}
           >
             PROJETOS PRONTOS
           </C.StyledLink>
-
-          {/*           https://api.whatsapp.com/send?phone=5582981820315*/}
-          <a href="/teste">
-            <img src={IconWhatsApp} alt="ir para o WhatsApp" />
-          </a>
         </C.Ul>
       </C.Nav>
     </C.Header>

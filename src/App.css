@@ -13,10 +13,10 @@ main{
    flex-direction: column;
 }
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 2px;
   }
 
 ::-webkit-scrollbar-thumb {
     background-color: #000000;
-    border-radius: 6px;
+    border-radius: 2px;
 }
