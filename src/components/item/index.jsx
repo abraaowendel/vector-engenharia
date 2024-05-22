@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import * as C from "./styled";
 
 export const Item = ({props}) => {
@@ -7,7 +8,7 @@ export const Item = ({props}) => {
             <h4>{props.titulo}</h4>
             <p>{props.valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
             <span>em 10x de {(props.valor / 10).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} sem juros</span>
-            <a href={props.url} target="_blank">Saiba mais</a>
+            <Link to={`/produtos/${props.id}`}>Saiba mais</Link>
         </C.Area>
     );
 }
