@@ -1,11 +1,11 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { NotFound } from "../pages/404";
 import { Home } from "../pages/home";
 import { Sobre } from "../pages/sobre";
 import { Contato } from "../pages/contato";
 import { Projetos } from "../pages/projetos";
-import EmDev from "../components/dev";
 import { Produtos } from "../pages/produtos";
+import EmDev from "../components/dev";
 
 const MainRoutes = () => {
   return (
@@ -15,7 +15,7 @@ const MainRoutes = () => {
       <Route path="/sobre" element={<Sobre />} />
       <Route path="/solicitar" element={<Contato />} />
       <Route path="/projetos" element={<Projetos />} />
-      <Route path="/produtos/:slug" element={<Produtos />} />
+      <Route path="/produtos/:id" element={<Produtos />} />
     </Routes>
   );
 };

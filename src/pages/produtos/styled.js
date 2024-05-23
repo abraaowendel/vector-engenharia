@@ -36,14 +36,17 @@ export const RightSide = styled.div`
     border-radius: 3px;
     margin: 30px 0 15px;
   }
-  button{
+  a,button{
     background-color: #FF7F00;
     color: #fff;
     padding: 15px;
     margin: 15px 0 0;
     border: 1px solid transparent;
     cursor: pointer;
-    font-weight: 600;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    height: 50px;
     &:hover{
       opacity: .8;
     }

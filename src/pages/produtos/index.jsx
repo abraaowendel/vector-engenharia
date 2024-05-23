@@ -5,15 +5,23 @@ import * as C from "./styled";
 import { useEffect, useState } from "react";
 
 export const Produtos = () => {
-  const id = useParams();
+
+  const { id } = useParams();
+  const produtoId = parseInt(id);
   const [item, setItem] = useState();
 
   useEffect(() => {
-    let item = data.find((x) => (x.id = id));
-    setItem(item);
+    trazerProduto()
   }, []);
 
-  return (
+  const trazerProduto = () => {
+    const json = data.find(obj => {
+      if(produtoId == obj.id){
+        setItem(obj)
+      }
+    });
+  }
+  return ( 
     <C.Container>
       {item && (
         <C.Sides className="sides">
@@ -33,13 +41,15 @@ export const Produtos = () => {
             <p>R$ {item.valor}</p>
             <span></span>
             <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked />            
+                <input type="radio" id="huey" name="drone" value="huey" checked readOnly/>            
                 <p>Projeto Arquitetônico</p>
             </div>
-            <button>COMPRAR AGORA</button>
-            <button>MODIFIQUE SEU PROJETO</button>
+            <a href={item.url} target="_blank" rel="noopener noreferrer">COMPRAR AGORA</a>
+            <button>MODIFICAR PROJETO</button>
+            <div>Categoria {item.categoria}</div>
+            <div>Etiqueta {item.etiqueta}</div>
           </C.RightSide>
-        </C.Sides>
+        </C.Sides>  
       )}
     </C.Container>
   );

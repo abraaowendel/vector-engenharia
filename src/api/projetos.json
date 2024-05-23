@@ -10,7 +10,7 @@
           "../assets/images/mini2.png",
           "../assets/images/mini3.png",
           "../assets/images/mini4.png"],
-        "categoria": "",
+        "categoria": "Residencial",
         "etiquetas": {
           "garagem": "",
           "suite": "",
