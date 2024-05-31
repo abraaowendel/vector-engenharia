@@ -6,8 +6,8 @@ import { GrClose } from "react-icons/gr";
 import { CgMenu } from "react-icons/cg";
 
 export const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
   const [toogle, setToogle] = useState(false);
 
   useEffect(() => {

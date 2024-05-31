@@ -2,12 +2,11 @@ import * as C from "./styled";
 import { motion } from "framer-motion";
 import { Item } from "../../components/item";
 import {useState } from "react";
-import {data} from "../../api/projetos.json";
+import json  from "../../api/projetos";
 
 export const Projetos = () => {
 
-    const [json, setJson] = useState(data);
-
+    const [data, setData] = useState(json.object);
 
     return (
       <C.Container>
@@ -19,8 +18,8 @@ export const Projetos = () => {
           <C.Section>
             <h2>PROJETOS PRONTOS</h2>
             <C.Items>
-            {json && json.map((item, key) => <Item props={item} key={key} />)}
-            </C.Items>
+            {data && data.map((item, key) => <Item props={item} key={key} />)}
+          </C.Items>
           </C.Section>
         </motion.div>
       </C.Container>
