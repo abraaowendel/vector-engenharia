@@ -8,15 +8,18 @@ export const Container = styled.div`
   font-family: "Poppins", "Ubuntu", "Arial";
   padding: 120px 60px 60px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  max-width: 1400px;
+  max-width: 1440px;
   margin: auto;
 `;
 export const Sides = styled.div`
-  max-width: 1400px;
-  margin: auto;
-  padding: 30px 0;
+  margin-top: 45px;
+  padding-top: 40px;
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   justify-content: center;
 `;
@@ -28,6 +31,7 @@ export const LeftSide = styled.div`
 export const RightSide = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
   h1{
     color: #023047;
   }
@@ -117,8 +121,10 @@ export const Miniaturas = styled.div`
   }
 `;
 export const Info = styled.div`
+  margin: 80px 0;
 `
 export const Descricao = styled.div`
+  padding-bottom: 40px;
   p{
     color: #555;
   }
@@ -128,4 +134,47 @@ export const Titulo = styled.h2`
   font-weight: 100;
   letter-spacing: 1.25px;
   color: #555;
+  margin-bottom: 10px;
 `
+export const Items = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+
+  tbody {
+    display: flex; 
+    font-size: 14px;
+    color: #555;
+  }
+  
+  td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  thead {
+    text-align: center;
+  }
+  
+  td {
+    border: 1px solid #ddd;
+  }
+  
+  img{
+    height: 80px;
+  }
+  td:nth-child(1),td:nth-child(2) {
+    padding: 20px; 
+    min-height: 100px;
+    text-align: center;
+  }
+  td:nth-child(3) {
+    height: 40px; 
+  }
+
+`;
+
+
+  
+
