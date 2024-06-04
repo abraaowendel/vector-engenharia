@@ -9,14 +9,13 @@ import iconQuartos from "../../assets/icons/icon_quartos.webp";
 import iconSuites from "../../assets/icons/icon_suites.webp";
 import iconChurrasqueira from "../../assets/icons/icon_churrasqueira.webp";
 import iconPiscina from "../../assets/icons/icon_piscina.webp";
-import iconEscritorio from "../../assets/icons/icon_escritorio.webp";
 import iconGaragem from "../../assets/icons/icon_garagem.webp";
 
 import json from "../../api/projetos";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-export const Produtos = () => {
+export const Produtos = () => { 
   const { id } = useParams();
   const produtoId = parseInt(id);
   const [item, setItem] = useState();
@@ -51,7 +50,7 @@ export const Produtos = () => {
                     key={key}
                     style={{ opacity: imagemPrincipal === item ? 1 : 0.5 }}
                     alt={`Miniatura + ${key}`}
-                    onClick={() => setImagemPrincipal(item)}
+                    onMouseMove={() => setImagemPrincipal(item)}
                   />
                 ))}
               </C.Miniaturas>
@@ -145,19 +144,11 @@ export const Produtos = () => {
             </tr>
             <tr>
               <td>
-              <img src={iconChurrasqueira} alt="" />
-              </td>
-              <td>Churrasqueira</td>
-              <td>Sim</td>
-            </tr>
-            <tr>
-              <td>
               <img src={iconPiscina} alt="" />
               </td>
               <td>Piscina</td>
               <td>Não</td>
-            </tr>
-            
+            </tr>   
           </tbody>
         </C.Items>
       </C.Info>

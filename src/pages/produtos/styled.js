@@ -11,8 +11,11 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: auto;
+  @media (max-width: 768px) {
+    padding: 60px 30px 30px;
+  }
 `;
 export const Sides = styled.div`
   margin-top: 45px;
@@ -21,12 +24,22 @@ export const Sides = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 export const LeftSide = styled.div`
   display: flex;
   flex-direction: column;
   margin-right: 30px;
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
 `;
 export const RightSide = styled.div`
   display: flex;
@@ -34,6 +47,7 @@ export const RightSide = styled.div`
   width: 100%;
   h1{
     color: #023047;
+    font-weight: 100;
   }
   h5{
     font-size: 18px;
@@ -83,6 +97,20 @@ export const RightSide = styled.div`
       opacity: 0.8;
     }
   }
+  @media (max-width: 985px)  {
+   h1{
+    font-size: 25px;
+   } 
+   h4 {
+    font-size: 20px;
+   }
+   h5{
+    font-size: 14px;
+   }
+   p,span{
+    font-size: 10px;
+   }
+  }
 `;
 export const Line = styled.div`
   display: block;
@@ -91,6 +119,9 @@ export const Line = styled.div`
   background-color: #bbbbbb;
   border-radius: 3px;
   margin: 30px 0 15px;
+  @media (max-width: 985px)  {
+   margin: 15px 0 7.5px;
+  }
 `;
 export const Box = styled.div`
   span {
@@ -103,30 +134,69 @@ export const Box = styled.div`
   }
 `;
 export const ImgPrincipal = styled.img`
+  max-width: 500px;
+  height: 260px;
   width: 100%;
-  height: 300px;
   border: 1px solid #000;
+  object-fit: cover;
+  @media (max-width: 985px)  {
+    max-width: 400px;
+  }
+  @media (max-width: 768px)  {
+    max-width: 100%;
+    height: auto;
+  }
 `;
 export const Miniaturas = styled.div`
   display: flex;
+  max-width: 500px;
   img {
-    min-width: 150px;
+    min-width: 120px;
     height: 80px;
     border: 1px solid #000;
     cursor: pointer;
+    object-fit: cover;
     transition: 0.3s all ease-in;
     &:hover {
       opacity: 1 !important;
     }
   }
+  @media (max-width: 985px)  {
+      max-width: 400px;
+      img{
+        min-width: 100px;
+        width: 100%;
+      }
+  }
+  @media (max-width: 768px)  {
+    min-width: 100%;
+   
+  }
+  @media (max-width: 460px)  {
+    img{
+      min-width: 50px;
+      height: auto;
+    }
+  }
 `;
 export const Info = styled.div`
   margin: 80px 0;
+  width: 100%;
+  display: flex;  
+  flex-direction: column;
+  @media (max-width: 768px)  {
+    margin: 40px 0;
+  }
 `
 export const Descricao = styled.div`
   padding-bottom: 40px;
   p{
     color: #555;
+  }
+  @media (max-width: 480px)  {
+    p{
+      font-size: 14px;
+    }
   }
 `
 export const Titulo = styled.h2`
@@ -135,22 +205,25 @@ export const Titulo = styled.h2`
   letter-spacing: 1.25px;
   color: #555;
   margin-bottom: 10px;
+  display: block;
+
 `
 export const Items = styled.table`
-  width: 100%;
   border-collapse: collapse;
 
   tbody {
-    display: flex; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     font-size: 14px;
     color: #555;
   }
-  
+
   td {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: 1px solid #ddd;
   }
   
   thead {
@@ -158,7 +231,7 @@ export const Items = styled.table`
   }
   
   td {
-    border: 1px solid #ddd;
+    
   }
   
   img{
