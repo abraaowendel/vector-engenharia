@@ -1,5 +1,5 @@
 //PROJETO 01
-import imagemPrincipal1 from "../assets/images/teste1.png";
+import imagemPrincipal1 from "../assets/images/teste1.PNG";
 import miniatura01 from "../assets/images/mini1.png";
 import miniatura02 from "../assets/images/mini2.png";
 import miniatura03 from "../assets/images/mini3.png";
