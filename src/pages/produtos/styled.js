@@ -225,15 +225,11 @@ export const Items = styled.table`
     flex-direction: column;
     border: 1px solid #ddd;
   }
-  
+
   thead {
     text-align: center;
   }
-  
-  td {
-    
-  }
-  
+
   img{
     height: 80px;
   }
@@ -245,7 +241,14 @@ export const Items = styled.table`
   td:nth-child(3) {
     height: 40px; 
   }
-
+  @media (max-width: 768px)  {
+    p{
+      font-size: 14px;
+    }
+    tr{
+    margin: 5px;
+    }
+  }
 `;
 
 
