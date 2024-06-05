@@ -1,9 +1,9 @@
 //PROJETO 01
-import imagemPrincipal1 from "../assets/images/teste1.PNG";
-import miniatura01 from "../assets/images/mini1.png";
-import miniatura02 from "../assets/images/mini2.png";
-import miniatura03 from "../assets/images/mini3.png";
-import miniatura04 from "../assets/images/mini4.png";
+import imagemPrincipal1 from "../assets/images/teste1.webp";
+import miniatura01 from "../assets/images/mini1.webp";
+import miniatura02 from "../assets/images/mini2.webp";
+import miniatura03 from "../assets/images/mini3.webp";
+import miniatura04 from "../assets/images/mini4.webp";
 /* // PROJETO 02
 import imagemPrincipal2 from '../assets/images/teste1.png';
 import miniatura01 from '../assets/images/mini1.png';
