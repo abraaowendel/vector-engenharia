@@ -7,29 +7,13 @@ import { CgMenu } from "react-icons/cg";
 
 export const Header = () => {
   const location = useLocation();
-  const [isScrolled, setIsScrolled] = useState(false);
   const [toogle, setToogle] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const threshold = 50;
-      setIsScrolled(window.scrollY > threshold);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const containerClass = toogle ? "active" : "";
 
   return (
-    <C.Header
-      style={{
-        backgroundColor:
-          location.pathname !== "/" || isScrolled ? "#000" : "transparent",
-      }}
-    >
+    <C.Header>
       <C.Logo src={Logo} alt="Logo Vector Engenharia" width={"410px"} height={"auto"} />
 
       <C.btnMenu onClick={() => setToogle(!toogle)}>

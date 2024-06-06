@@ -246,7 +246,16 @@ export const Items = styled.table`
       font-size: 14px;
     }
     tr{
-    margin: 5px;
+      margin: 5px;
+    }
+    
+  } 
+  @media (max-width: 480px)  {
+    tbody {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    tr{
+      margin: 10px 0;
     }
   }
 `;

@@ -9,7 +9,6 @@ export const Area = styled.div`
   h4 {
     font-weight: 100;
     margin-top: 10px;
-    height: 100%;
   }
   p {
     font-size: 20px;
@@ -28,7 +27,7 @@ export const Area = styled.div`
     min-height: 300px;
     border-radius: 10px;
     object-fit: cover;
-    border: 1px solid #000; /* REMOVER QUANDO COLOCAR IMAGEM */
+    border: 1px solid #ccc;
   }
   a {
     min-width: 180px;
@@ -69,7 +68,8 @@ export const Area = styled.div`
         margin: 10px auto;
     }
     img{
-        min-height: 250px;
+      max-width: 100%;
+      min-height: auto;
     }
   }
 `;

@@ -12,7 +12,7 @@ export const Container = styled.div`
     margin: 20px 0 0;
   }
   @media (max-width: 480px) {
-    padding: 100px 20px 0;
+    padding: 100px 20px 30px;
   }
 `
 export const Section = styled.section`
@@ -22,7 +22,9 @@ export const Section = styled.section`
   flex-direction: column;
   h2{
     text-align: center;
-    margin-top: 20px;
+    color: #000;
+    letter-spacing: 1.2px;
+    margin: 50px 0 10px;
     font-weight: 700;
     font-size: 36px;
   }
