@@ -7,6 +7,7 @@ import Imagem2 from "../../assets/images/slide-2.webp";
 import Imagem3 from "../../assets/images/slide-3.webp";
 
 export const Home = () => {
+
   const [slides, setSlides] = useState([
     { content: Imagem1 },
     { content: Imagem2 },

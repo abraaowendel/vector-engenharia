@@ -12,6 +12,7 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 30px 60px;
+  height: 110.1px;
   button{
     height: 100%;
     border: 0;
