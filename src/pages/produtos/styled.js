@@ -45,11 +45,11 @@ export const RightSide = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  h1{
+  h1 {
     color: #023047;
     font-weight: 100;
   }
-  h5{
+  h5 {
     font-size: 18px;
     font-weight: normal;
     color: #668290;
@@ -97,19 +97,20 @@ export const RightSide = styled.div`
       opacity: 0.8;
     }
   }
-  @media (max-width: 985px)  {
-   h1{
-    font-size: 25px;
-   } 
-   h4 {
-    font-size: 20px;
-   }
-   h5{
-    font-size: 14px;
-   }
-   p,span{
-    font-size: 10px;
-   }
+  @media (max-width: 985px) {
+    h1 {
+      font-size: 25px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    h5 {
+      font-size: 14px;
+    }
+    p,
+    span {
+      font-size: 10px;
+    }
   }
 `;
 export const Line = styled.div`
@@ -119,8 +120,8 @@ export const Line = styled.div`
   background-color: #bbbbbb;
   border-radius: 3px;
   margin: 30px 0 15px;
-  @media (max-width: 985px)  {
-   margin: 15px 0 7.5px;
+  @media (max-width: 985px) {
+    margin: 15px 0 7.5px;
   }
 `;
 export const Box = styled.div`
@@ -139,10 +140,10 @@ export const ImgPrincipal = styled.img`
   width: 100%;
   border: 1px solid #000;
   object-fit: cover;
-  @media (max-width: 985px)  {
+  @media (max-width: 985px) {
     max-width: 400px;
   }
-  @media (max-width: 768px)  {
+  @media (max-width: 768px) {
     max-width: 100%;
     height: auto;
   }
@@ -161,19 +162,18 @@ export const Miniaturas = styled.div`
       opacity: 1 !important;
     }
   }
-  @media (max-width: 985px)  {
-      max-width: 400px;
-      img{
-        min-width: 100px;
-        width: 100%;
-      }
+  @media (max-width: 985px) {
+    max-width: 400px;
+    img {
+      min-width: 100px;
+      width: 100%;
+    }
   }
-  @media (max-width: 768px)  {
+  @media (max-width: 768px) {
     min-width: 100%;
-   
   }
-  @media (max-width: 460px)  {
-    img{
+  @media (max-width: 460px) {
+    img {
       min-width: 50px;
       height: auto;
     }
@@ -182,23 +182,23 @@ export const Miniaturas = styled.div`
 export const Info = styled.div`
   margin: 80px 0;
   width: 100%;
-  display: flex;  
+  display: flex;
   flex-direction: column;
-  @media (max-width: 768px)  {
+  @media (max-width: 768px) {
     margin: 40px 0;
   }
-`
+`;
 export const Descricao = styled.div`
   padding-bottom: 40px;
-  p{
+  p {
     color: #555;
   }
-  @media (max-width: 480px)  {
-    p{
+  @media (max-width: 480px) {
+    p {
       font-size: 14px;
     }
   }
-`
+`;
 export const Titulo = styled.h2`
   font-size: 28px;
   font-weight: 100;
@@ -206,60 +206,4 @@ export const Titulo = styled.h2`
   color: #555;
   margin-bottom: 10px;
   display: block;
-
-`
-export const Items = styled.table`
-  border-collapse: collapse;
-
-  tbody {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    font-size: 14px;
-    color: #555;
-  }
-
-  td {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid #ddd;
-  }
-
-  thead {
-    text-align: center;
-  }
-
-  img{
-    height: 80px;
-  }
-  td:nth-child(1),td:nth-child(2) {
-    padding: 20px; 
-    min-height: 100px;
-    text-align: center;
-  }
-  td:nth-child(3) {
-    height: 40px; 
-  }
-  @media (max-width: 768px)  {
-    p{
-      font-size: 14px;
-    }
-    tr{
-      margin: 5px;
-    }
-    
-  } 
-  @media (max-width: 480px)  {
-    tbody {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    tr{
-      margin: 10px 0;
-    }
-  }
 `;
-
-
-  
-

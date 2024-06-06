@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const Header = styled.header`
   position: fixed;
@@ -13,7 +13,7 @@ export const Header = styled.header`
   justify-content: space-between;
   padding: 30px 60px;
   height: 110.1px;
-  button{
+  button {
     height: 100%;
     border: 0;
     background-color: transparent;
@@ -29,16 +29,16 @@ export const btnMenu = styled.div`
   display: none;
   flex-direction: column;
   z-index: 5;
-  svg{
+  svg {
     display: block;
-    transition: all .8s  ease-in-out;
+    transition: all 0.8s ease-in-out;
   }
   @media (max-width: 979px) {
     display: flex;
   }
   @media (max-width: 480px) {
     right: 20px;
-    svg{
+    svg {
       font-size: 35px;
       margin-left: 10px;
     }
@@ -69,16 +69,14 @@ export const Nav = styled.nav`
     align-items: center;
     flex-direction: column;
     width: 0;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     left: -999px;
-    top: 0; 
-    &.active{
+    top: 0;
+    &.active {
       width: 100vw;
       left: 0;
     }
-
   }
-
 `;
 
 export const StyledLink = styled(Link)`
