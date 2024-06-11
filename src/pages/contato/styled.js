@@ -14,7 +14,6 @@ export const Section = styled.section`
   align-items: center;
   justify-content: center;
   padding: 120px 60px 60px;
-
   h2 {
     font-size: 36px;
     text-transform: uppercase;

@@ -23,7 +23,7 @@ export const Table = styled.table`
   }
 
   img {
-    height: 80px;
+    height: 60px;
   }
   td:nth-child(1),
   td:nth-child(2) {

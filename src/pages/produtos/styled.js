@@ -83,7 +83,7 @@ export const RightSide = styled.div`
   }
   a,
   button {
-    background-color: #ff7f00;
+    background-color: #DC0000;
     color: #fff;
     padding: 15px;
     margin: 15px 0;

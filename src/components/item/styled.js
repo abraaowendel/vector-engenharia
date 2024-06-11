@@ -14,7 +14,7 @@ export const Area = styled.div`
     font-size: 20px;
   }
   span {
-    color: #32633d;
+    color: #DC0000;
   }
 
   p,
@@ -36,7 +36,7 @@ export const Area = styled.div`
     margin: 15px auto;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #32633d;
+    background-color: #DC0000;
     color: #fff;
     &:hover {
       opacity: 0.8;

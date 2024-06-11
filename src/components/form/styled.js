@@ -76,8 +76,8 @@ export const FormTextarea = styled.textarea`
 `;
 
 export const SubmitButton = styled.button`
-  background-color: #4caf50; /* Green */
-  color: white;
+  background-color: #DC0000;
+  color: #fff;
   padding: 15px 30px;
   border: none;
   font-size: 18px;

@@ -24,7 +24,7 @@ export const Section = styled.section`
     font-size: 18px;
   }
   button{
-    background-color: #FF0000;
+    background-color: #DC0000;
     font-family: 'Poppins', 'Ubuntu', 'Arial';
     padding: 15px 20px;
     border-radius: 3px;

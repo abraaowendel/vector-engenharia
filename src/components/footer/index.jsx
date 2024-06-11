@@ -8,13 +8,13 @@ export const Footer = () => {
         <C.Container>
             <div>
                 <a href="https://www.instagram.com/gabriel_aqn/" target="_blank">
-                    <SlSocialInstagram fontSize={30} color="#fff"/>
+                    <SlSocialInstagram fontSize={30} color="#DC0000"/>
                 </a>
                 <a href="https://api.whatsapp.com/send?phone=5582982026496&text=Ol%C3%A1%2C%20desejo%20solicitar%20um%20projeto%20personalizado.%F0%9F%98%80" target="_blank">
-                    <FaWhatsapp fontSize={30} color="#fff"/>
+                    <FaWhatsapp fontSize={30} color="#DC0000"/>
                 </a>
                 <a href="mailto:abraao.dev@gmail.com" target="_blank">
-                    <SiGmail fontSize={30} color="#fff"/>
+                    <SiGmail fontSize={30} color="#DC0000"/>
                 </a>
             </div>
             <p>Copyright © {new Date().getFullYear()} Vector Engenharia. Todos os direitos reservados.</p>

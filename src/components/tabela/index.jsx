@@ -6,7 +6,7 @@ import iconBanheiro from "../../assets/icons/icon_banheiros.webp";
 import iconQuartos from "../../assets/icons/icon_quartos.webp";
 import iconSuites from "../../assets/icons/icon_suites.webp";
 import iconPiscina from "../../assets/icons/icon_piscina.webp";
-import iconGaragem from "../../assets/icons/icon_garagem.webp";
+import iconGaragem from "../../assets/icons/icon-garagem.webp";
 
 export const Tabela = ({ props }) => {
   return (

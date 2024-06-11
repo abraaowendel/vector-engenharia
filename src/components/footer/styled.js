@@ -24,7 +24,7 @@ export const Container = styled.footer`
     }
   }
   p {
-    color: #fff;
+    color: #DC0000;
     font-size: 13px;
   }
   @media (max-width: 480px) {
