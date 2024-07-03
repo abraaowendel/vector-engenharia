@@ -2,6 +2,7 @@ import * as C from "./styled";
 import { SlSocialInstagram } from "react-icons/sl";
 import { SiGmail } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa";
+import  Powered  from "../../assets/icons/powered.svg";
 
 export const Footer = () => {
     return (
@@ -17,7 +18,13 @@ export const Footer = () => {
                     <SiGmail fontSize={30} color="#DC0000"/>
                 </a>
             </div>
-            <p>Copyright © {new Date().getFullYear()} Vector Engenharia. Todos os direitos reservados.</p>
+            <C.Copyright>
+                <p>Copyright © {new Date().getFullYear()} Vector Engenharia. Todos os direitos reservados.</p>
+                <div>
+                    <span>Powered by</span>
+                    <img src={Powered} alt="" />
+                </div>
+            </C.Copyright>
         </C.Container>
     );
 };

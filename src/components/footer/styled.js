@@ -34,3 +34,22 @@ export const Container = styled.footer`
     }
   }
 `;
+export const Copyright = styled.div`
+  display: flex;
+  align-items: center;
+  span{
+    display: block;
+    color: #DC0000;
+    font-size: 12px;
+    font-family: 'Poppins', 'Arial';
+  }
+  p{
+    margin-right: 30px;
+  }
+  @media (max-width: 700px) {
+    flex-direction: column;
+    p{
+      margin: 10px 0;
+    }
+  }
+`

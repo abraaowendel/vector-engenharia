@@ -63,7 +63,7 @@ export const FormularioContato = () => {
   return (
     <C.FormContainer>
       <form onSubmit={handleSubmit}>
-        <C.FormTitle>SOLICITE SEU PROJETO</C.FormTitle>
+        <C.FormTitle>Solicite seu projeto</C.FormTitle>
         <C.FormGroup>
           <C.FormInput
             type="text"

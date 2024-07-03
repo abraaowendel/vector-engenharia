@@ -27,14 +27,12 @@ export const FormContainer = styled.div`
   }
 `;
 export const FormTitle = styled.h2`
-  text-align: start;
-  margin: 20px 0;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 34px;
   text-align: center;
+  text-transform: none;
+  padding: 30px 0 15px;
   @media (max-width: 480px) {
-    padding: 60px 5px;
-    margin: 10px 0 0;
     font-size: 30px;
   }
 `;
