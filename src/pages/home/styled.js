@@ -26,7 +26,7 @@ export const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: end;
-  transition: all .8s ease-in;
+  transition: all .6s ease-in;
   background-color: #000;
   @media (max-width: 480px) {
     min-height: 90vh;

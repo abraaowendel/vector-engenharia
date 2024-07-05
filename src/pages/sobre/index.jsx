@@ -12,7 +12,7 @@ export const Sobre = () => {
         transition={{ duration: 0.5 }}
       >
         <C.Section>
-          <h2>Sobre</h2>
+          <h2>SOBRE</h2>
           <p>
             A Vector Engenharia é uma empresa do segmento de projetos
             residências e industriais, onde visamos a qualidade final do produto

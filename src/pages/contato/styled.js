@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100vw;
   background-color: #fff;
-  min-height: calc(100vh - 107px);
+  min-height: calc(100vh - 80px);
   background-color: #fff;
   font-family: "Poppins", "Ubuntu", "Arial";
 `;

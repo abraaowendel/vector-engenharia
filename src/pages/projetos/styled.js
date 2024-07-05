@@ -7,9 +7,11 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1140px;
+  margin: auto;
   @media (max-width: 979px) {
     padding: 120px 30px 0;
-    margin: 20px 0 0;
+    margin: 20px 0;
   }
   @media (max-width: 480px) {
     padding: 100px 20px 30px;
@@ -24,22 +26,29 @@ export const Section = styled.section`
     text-align: center;
     color: #000;
     letter-spacing: 1.2px;
-    margin: 50px 0 10px;
+    margin: 40px 0 20px;
     font-weight: 700;
     font-size: 36px;
   }
   @media (max-width: 979px) {
     flex-direction: column;
+    h2{    
+      margin: 15px 0 0;
+      font-size: 30px;
+    }
   }
   @media (max-width: 480px) {
     h2{
-      margin: 10px 0 0;
-      font-size: 30px;
+      margin: 30px 0 0;
+      font-size: 26px;
+      line-height: 1.1;
     }
   }
 `
 export const Items = styled.div`
+  margin-top: 10px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  align-items: stretch;
+  gap: 20px;
 `

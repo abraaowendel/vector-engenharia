@@ -64,7 +64,7 @@ export const FormularioContato = () => {
   return (
     <C.FormContainer>
       <form onSubmit={handleSubmit}>
-        <C.FormTitle>Solicite seu projeto</C.FormTitle>
+        <C.FormTitle>SOLICITE SEU PROJETO</C.FormTitle>
         <C.FormGroup>
           <C.FormInput
             type="text"
@@ -134,7 +134,7 @@ export const FormularioContato = () => {
         </C.FormGroup>
 
         <C.SubmitButton type="submit" className="form-button">
-          Solicitar Projeto
+          SOLICITAR PROJETO
         </C.SubmitButton>
       </form>
     </C.FormContainer>

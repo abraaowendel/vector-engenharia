@@ -8,7 +8,7 @@ export const Container = styled.div`
 `
 export const Section = styled.section`
   max-width: 1140px;
-  min-height: calc(100vh - 107px);
+  min-height: 100vh;
   margin: auto;
   padding: 60px 60px 0;
   display: flex;

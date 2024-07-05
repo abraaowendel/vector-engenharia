@@ -70,6 +70,9 @@ export const FormTextarea = styled.textarea`
   border: 1px solid #ccc;
   @media (max-width: 480px) {
     font-size: 14px;
+    &::placeholder {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -78,15 +81,18 @@ export const SubmitButton = styled.button`
   color: #fff;
   padding: 15px 30px;
   border: none;
-  font-size: 18px;
+  font-size: 13px;
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
   margin: auto;
   &:hover {
-    background-color: #45a049; /* Green hover color */
+    background-color: #8b0000; /* Green hover color */
+  }
+  @media (max-width: 979px) {
+    margin-bottom: 30px;
   }
   @media (max-width: 480px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `;

@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const Area = styled.div`
-  flex: 33.3%; /* Consider adding flex-grow: 1 here (optional) */
   display: flex;
   flex-direction: column;
   font-family: "Poppins", "Ubuntu", "Arial";
-  padding: 20px;
+  min-width: 200px;
+  max-width: 300px;
   h4 {
     font-weight: 100;
     margin-top: 10px;
+    min-height: 50px;
   }
   p {
     font-size: 20px;
@@ -22,9 +23,12 @@ export const Area = styled.div`
   h4 {
     padding: 0 15px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
   }
   img {
-    min-height: 300px;
+    min-height: 200px;
     border-radius: 10px;
     object-fit: cover;
     border: 1px solid #ccc;
@@ -39,18 +43,25 @@ export const Area = styled.div`
     background-color: #DC0000;
     color: #fff;
     &:hover {
-      opacity: 0.8;
+      background-color: #8b0000;
+    }
+  }
+  @media (max-width: 1060px) {
+    max-width: 400px;
+    img{
+      min-height: 250px;
     }
   }
   @media (max-width: 979px) {
-    flex: 50%;
     p {
       font-size: 18px;
     }
   }
   @media (max-width: 768px) {
-    flex: 100%;
     padding: 10px 0px;
+    img{
+      min-height: auto;
+    }
   }  
   @media (max-width: 480px) {
     h4{

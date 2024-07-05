@@ -31,10 +31,10 @@ export const btnMenu = styled.div`
   z-index: 5;
   svg {
     display: block;
-    transition: all 0.8s ease-in-out;
   }
   @media (max-width: 979px) {
     display: flex;
+    transition: all .8s ease-in-out;
   }
   @media (max-width: 480px) {
     right: 20px;

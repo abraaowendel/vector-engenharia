@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const Container = styled.footer`
   font-family: "Poppins";
   background-color: #000;
-  padding: 30px 60px 15px;
-  a:hover {
-    opacity: 0.5;
+  padding: 20px 60px 15px;
+  svg:hover {
+    transition: all .2s ease-in;
+    fill: #fff;
   }
   @media (max-width: 480px) {
     padding: 30px 20px 15px;

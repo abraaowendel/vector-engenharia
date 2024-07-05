@@ -20,7 +20,8 @@ export const Footer = () => {
           <FaWhatsapp fontSize={30} color="#DC0000" />
         </a>
         <a href="mailto:abraao.dev@gmail.com" target="_blank">
-          <SiGmail fontSize={30} color="#DC0000" />
+          <SiGmail fontSize={30}
+          color="#DC0000" />
         </a>
       </C.Social>
       <C.Copyright>
@@ -34,7 +35,7 @@ export const Footer = () => {
           alt="Ir para o desenvolvedor do site"
         >
           <p>Powered By</p>
-          <img src={Powered} alt="" />
+          <img src={Powered} alt="" style={{margin: "-5px 0 0 5px "}}/>
         </a>
       </C.Copyright>
       </C.Content>
