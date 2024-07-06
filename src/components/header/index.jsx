@@ -6,9 +6,9 @@ import { GrClose } from "react-icons/gr";
 import { CgMenu } from "react-icons/cg";
 
 export const Header = () => {
+
   const location = useLocation();
   const [toogle, setToogle] = useState(false);
-
 
   const containerClass = toogle ? "active" : "";
 

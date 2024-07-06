@@ -84,7 +84,7 @@ export const StyledLink = styled(Link)`
   cursor: pointer;
   transition: color 0.3s ease-in-out;
   user-select: none;
-  font-family: "Poppins", "Ubuntu";
+  font-family: "Poppins", sans-serif;
   margin: 0 10px;
   &:hover {
     color: #fff;

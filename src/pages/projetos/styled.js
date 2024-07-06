@@ -1,54 +1,44 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  min-height: calc(100vh - 107px);
   font-family: 'Poppins', 'Ubuntu', 'Arial';
-  padding: 120px 60px 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1140px;
-  margin: auto;
-  @media (max-width: 979px) {
-    padding: 120px 30px 0;
-    margin: 20px 0;
-  }
-  @media (max-width: 480px) {
-    padding: 100px 20px 30px;
+  min-height: calc(100vh - 110.09px);
+  padding: 150px 10px 70px;
+  @media (max-width: 570px) {
+    padding: 150px 10px 40px;
   }
 `
 export const Section = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin: auto;
   h2{
     text-align: center;
-    color: #000;
-    letter-spacing: 1.2px;
-    margin: 40px 0 20px;
-    font-weight: 700;
-    font-size: 36px;
+    font-size: 26px;
+    margin: 15px 0 30px;
   }
-  @media (max-width: 979px) {
-    flex-direction: column;
-    h2{    
-      margin: 15px 0 0;
+  @media (min-width: 576px) {
+    max-width: 540px;
+    h2{
       font-size: 30px;
     }
   }
-  @media (max-width: 480px) {
+  @media (min-width: 768px) {
+    max-width: 720px;
     h2{
-      margin: 30px 0 0;
-      font-size: 26px;
-      line-height: 1.1;
+      font-size: 36px;
+      margin-top: 30px;
     }
   }
+  @media (min-width: 990px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  } 
 `
 export const Items = styled.div`
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+   flex-wrap: wrap;
+   display: flex;
+   @media (max-width: 576px) {
+    justify-content: center;
+  }
 `
