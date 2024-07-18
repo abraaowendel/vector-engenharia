@@ -35,7 +35,7 @@ export const Footer = () => {
           alt="Ir para o desenvolvedor do site"
         >
           <p>Powered By</p>
-          <img src={Powered} alt="" style={{margin: "-5px 0 0 5px "}}/>
+          <img src={Powered} alt="Logo AW Systems" style={{margin: "-5px 0 0 5px "}}/>
         </a>
       </C.Copyright>
       </C.Content>

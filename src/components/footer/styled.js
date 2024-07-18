@@ -39,6 +39,11 @@ export const Copyright = styled.div`
   justify-content: space-between;
   align-items: center;
   color: #dc0000;
+  /* a:hover{
+    fill: #fff;
+    color: #fff;
+   
+  } */
   p {
     font-size: 14px;
   }

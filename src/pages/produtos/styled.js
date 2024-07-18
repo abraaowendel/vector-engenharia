@@ -124,17 +124,8 @@ export const Line = styled.div`
     margin: 15px 0 7.5px;
   }
 `;
-export const Box = styled.div`
-  span {
-    display: block;
-    width: 100%;
-    height: 5px;
-    background-color: #000;
-    margin: 10px 0;
-    border-radius: 3px;
-  }
-`;
 export const ImgPrincipal = styled.img`
+  position: relative;
   max-width: 500px;
   height: 260px;
   width: 100%;
@@ -148,7 +139,53 @@ export const ImgPrincipal = styled.img`
     height: auto;
   }
 `;
+export const Box = styled.div`
+  .arrows{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    .arrow-left{
+      position: absolute;
+      top: 50%;
+      left: 25px;
+      &:hover{
+        opacity: .5;
+      }
+    }
+    .arrow-right{
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      &:hover{
+        opacity: .5;
+      }
+    }
+    .arrow-left, 
+    .arrow-right{
+      z-index: 3;
+      cursor: pointer;
+    }
+  }
+  span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    margin: 10px 0;
+    border-radius: 3px;
+  }
+  @media (max-width: 460px) {
+    .arrow-left, 
+    .arrow-right{
+      font-size: 30px;
+    }
+  }
+`;
+
 export const Miniaturas = styled.div`
+  user-select:none;
   display: flex;
   max-width: 500px;
   img {

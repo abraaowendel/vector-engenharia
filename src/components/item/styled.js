@@ -22,7 +22,16 @@ export const Area = styled.div`
       color: #8B0000;
     }
     .photo{
+      position: relative;
       height: 255px;
+      .arrows{
+        .arrow-left{
+          position: absolute;
+        }
+        .arrow-right{
+        
+        }
+      }
     }
     .photo img{
       width: 100%;
