@@ -8,32 +8,38 @@ export const Header = styled.header`
   left: 0;
   right: 0;
   background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 60px;
-  height: 110.1px;
   button {
     height: 100%;
     border: 0;
     background-color: transparent;
     margin: 0 10px;
   }
+  .sides{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+    height: 110.1px;
+    max-width: 1400px;
+    margin: auto;
+  }
   @media (max-width: 480px) {
-    padding: 30px 20px;
+    .sides{
+      padding: 30px 20px;
+    }
   }
 `;
 export const btnMenu = styled.div`
-  position: absolute;
-  right: 60px;
   display: none;
-  flex-direction: column;
   z-index: 5;
   svg {
     display: block;
   }
   @media (max-width: 979px) {
     display: flex;
+    position: absolute;
+    right: 60px;
     transition: all .8s ease-in-out;
   }
   @media (max-width: 480px) {
